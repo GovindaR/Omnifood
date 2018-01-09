@@ -382,18 +382,30 @@
         		<form method="post" action="mailer.php" class="contact-form">
 
         			<div class="row">
-        			<div class="form-messages sucess">
-        					Thank you! Your message has been sent.
+
+        				<!-- <?php
+
+        				if($_GET['seccess'] == 1)	
+        				{
+
+		        			echo "<div class=\"form-messages success\">
+		        					Thank you! Your message has been sent.
+		        				</div>";
+		        			}
+
+
+		        		if($_GET['seccess'] == -1)
+		        			{			
+		        			echo "<div class=\"form-messages error\">
+		        					Oops! Something went wrong.Please try again!
+		        				</div>";
+		        			}
+
+        				?>
+ -->
         				</div>
 
 
-        				<!-- <div class="form-messages error">
-        					Oops! Something went wrong.Please try again!
-        				</div> -->
-
-        				</div>
-
-        				
         			<div class="row">
         				<div class="col span-1-of-3">
         				<label for="name">
@@ -503,7 +515,7 @@
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
     <script src="resource/js/waypoints.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="vendor/js/maps.js"></script>
     <script src="resources/js/script.js"></script>
 
 
